@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import NavLinkElement from "./NavLinkElement";
 
 const Navbar = () => {
     return (
@@ -18,27 +19,12 @@ const Navbar = () => {
                     alt="CS Academy Logo"
                 />
             </Link>
+            
             <ul className="flex space-x-4 md:space-x-7">
-                <li>
-                    <Link href={"/events"}>
-                        Events
-                    </Link>
-                </li>
-                <li>
-                    <Link href={"/classes"}>
-                        Classes
-                    </Link>
-                </li>
-                <li>
-                    <Link href={"/resources"}>
-                        Resources
-                    </Link>
-                </li>
-                <li>
-                    <Link href={"/projects"}>
-                        Projects
-                    </Link>
-                </li>
+                <NavLinkElement href="/events">Events</NavLinkElement>
+                <NavLinkElement href="/classes">Classes</NavLinkElement>
+                <NavLinkElement href="/resources">Resources</NavLinkElement>
+                <NavLinkElement href="/projects">Projects</NavLinkElement>
             </ul>
         </nav>
     )
