@@ -1,29 +1,27 @@
-"use client";
+// "use client";
 
 import clsx from 'clsx'
 import Image from 'next/image'
 import Rectangles from "../public/rectangles.svg";
 import Link from 'next/link';
 import Button from '@/components/Button';
-import { useEffect } from 'react';
-import Scrollbar from 'smooth-scrollbar';
-import Footer from '@/components/Footer';
+// import { useEffect } from 'react';
+// import Scrollbar from 'smooth-scrollbar';
 
 export default function Home() {
-  useEffect(() => {
-    Scrollbar.init(document.querySelector("#main")!, { damping: 0.1 });
+  // useEffect(() => {
+  //   Scrollbar.init(document.querySelector("#main")!, { damping: 0.1 });
 
-    return () => {
-      if (Scrollbar) Scrollbar.destroy(document.querySelector("#main")!);
-    };
-  }, []);
+  //   return () => {
+  //     if (Scrollbar) Scrollbar.destroy(document.querySelector("#main")!);
+  //   };
+  // }, []);
 
   return (  
-    <main id="main" style={{ width: "100vw", height: "100vh", overflow: "auto" }} className="flex flex-col items-center">
+    <main id="main" className="flex flex-col items-center">
       <section className={clsx(
         "flex relative justify-center items-center w-full overflow-x-hidden",
-        // "min-h-[500px] h-[calc(100vh-200px)]",
-        "h-[100vh] min-h-[650px] md:min-h-[1000px]"
+        "h-[100vw] md:h-[130vh] min-h-[650px] md:min-h-[1000px]"
       )}>
         <div className="absolute right-0 bottom-[50px] md:bottom-0 md:w-1/3 w-2/3 h-[45vw]">
           <Image
@@ -147,7 +145,6 @@ export default function Home() {
         </section>
       </div>
       </div>
-      <Footer />
     </main>
   )
 }
