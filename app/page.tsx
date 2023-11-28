@@ -1,10 +1,12 @@
-// "use client";
+"use client";
 
 import clsx from 'clsx'
 import Image from 'next/image'
 import Rectangles from "../public/rectangles.svg";
 import Link from 'next/link';
 import Button from '@/components/Button';
+import { Typewriter } from 'react-simple-typewriter'
+
 // import { useEffect } from 'react';
 // import Scrollbar from 'smooth-scrollbar';
 
@@ -16,6 +18,9 @@ export default function Home() {
   //     if (Scrollbar) Scrollbar.destroy(document.querySelector("#main")!);
   //   };
   // }, []);
+
+  const HEADER_ITEMS = ["ACADEMY", "COMMUNITY", "TEAM"];
+
 
   return (  
     <main id="main" className="flex flex-col items-center">
@@ -50,7 +55,19 @@ export default function Home() {
         <div className="z-10 text-center text-6xl sm:text-8xl font-bold uppercase space-y-2">
           <h1>Computer</h1>
           <h1>Science</h1>
-          <h1>Academy</h1>
+          <h1>
+            <span>&#8203;</span>
+            <Typewriter
+              words = {HEADER_ITEMS}
+              loop = {0}
+              cursor
+              typeSpeed={150}
+              deleteSpeed={150}
+              delaySpeed = {1000}
+            />
+          </h1>
+
+
         </div>
       </section>
       <div className='p-3 pb-0'>
