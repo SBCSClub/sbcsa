@@ -12,7 +12,7 @@ export default function NavLinkElement(props : NavLinkElementProps){
     const currentPath = usePathname();
     return (
         <li>
-            <Link href={props.href} className={"hover:text-[#D6A756] " + ((currentPath ==props.href) ? "font-semibold" : "")}>
+            <Link href={props.href} className={"hover:text-[#D6A756] " + ((currentPath ==props.href) ? "font-semibold text-[#D6A756]" : "")}>
             {props.children}
             </Link>
         </li>

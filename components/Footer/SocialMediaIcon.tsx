@@ -1,6 +1,19 @@
-import clsx from "clsx";
+"use client"
 import Image from "next/image";
 import React from "react";
+import styled from "styled-components"
+
+const HoverDiv = styled.div`
+    &:hover {
+        background-color: ${props => props.color}
+    }
+`
+
+const HoverText = styled.div`
+    &:hover {
+        color: ${props => props.color}
+    }
+`
 
 interface SocialMediaIconProps{
     altText: string
@@ -13,18 +26,22 @@ interface SocialMediaIconProps{
 export default function SocialMediaIcon(props : SocialMediaIconProps){
     return (
         <div className="flex justify-center items-center space-x-3">
-            <div className={clsx("p-1 bg-slate-800 transition-colors duration-150 rounded-md", `hover:bg-[${props.color}]`)}>
-                <a target="_blank" rel="noreferrer noopener" href={props.href}
-                    >
-                    <Image
-                        src={props.imageSource}
-                        width={50}
-                        height={50}
-                        alt={props.altText}
-                    />
-                </a>
-            </div>
-            <p className={clsx("h-fit", `hover:text-[${props.color}]`)}>{props.trailingText}</p>
+            <a target="_blank" rel="noreferrer noopener" href={props.href}>
+                <HoverDiv color={props.color} className={"group p-1 bg-gray-900 rounded-lg"}
+                >
+                        <Image
+                            src={props.imageSource}
+                            width={50}
+                            height={50}
+                            alt={props.altText}
+                            className="group-hover:brightness-0 group-hover:invert"
+                        />
+                
+                </HoverDiv>
+            </a>
+            <a target="_blank" rel="noreferrer noopener" href={props.href}>
+                <HoverText color={props.color} className={"h-fit"}>{props.trailingText}</HoverText>
+            </a>
         </div>
         
     )
