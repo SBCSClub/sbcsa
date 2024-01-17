@@ -1,10 +1,11 @@
 import type { Metadata } from 'next'
-import { Manrope } from 'next/font/google'
+import { Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
+import clsx from 'clsx'
 
-const manrope = Manrope({ subsets: ['latin'] })
+const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
@@ -19,10 +20,10 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body id="root" className={manrope.className}>
+      <body id="root" className={clsx(inter.className, "flex items-center flex-col")}>
         <Navbar />
         {children}
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   )
