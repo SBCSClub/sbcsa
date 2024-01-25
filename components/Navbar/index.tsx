@@ -10,7 +10,7 @@ const Navbar = () => {
                 // backdropFilter: "blur(10px)",
                 // WebkitBackdropFilter: "blur(10px)"
             }}
-            className="py-3 bg-black px-3 md:px-9 fixed top-0 left-0 right-0 flex justify-center items-center z-50">
+            className="py-3 px-3 md:px-9 fixed top-0 left-0 right-0 flex justify-center items-center z-50">
             {/* <Link href={"/"}>
                 <Image
                     src={"/logo.png"}
