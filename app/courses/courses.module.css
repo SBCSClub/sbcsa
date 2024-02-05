@@ -1,0 +1,19 @@
+.courses {
+    position: relative;
+  }
+  
+.courses::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 10%;
+    width: 2px; /* Adjust thickness as needed */
+    background-color: #558C8C; /* Replace with your desired colors */
+    transform: translateX(-10%);
+}
+
+.border{
+    border: none;
+    border-top: 10px dashed black;
+}

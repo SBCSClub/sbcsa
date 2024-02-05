@@ -1,0 +1,66 @@
+{
+    "pre":[
+        {
+            "name": "Computer Science in the 21st Century",
+            "grade": 9,
+            "weighting": "Regular",
+            "credits": 5,
+            "image_path": "/courses/cs21.jpg",
+            "description": "Students will learn to apply 21st Century Skills by programming personal computers using Java. Topics include mathematical notation, read, write, and decision statements, loops, nested loops, generation of random numbers, procedures, and arrays. The emphasis will be on developing good programming style and technique.",
+            "tags": ["Intro", "Java", "If Statements", "Loops", "Arrays", "Programming Style"],
+            "link": "https://www.google.com/",
+            "prereqs":[
+                {
+                    "class": "Algebra I",
+                    "grade": "87%"
+                }
+            ]
+        },
+        {
+            "name": "AP Computer Science A",
+            "grade": 10,
+            "weighting": "AP",
+            "credits": 5,
+            "image_path": "",
+            "description": "Insert Description",
+            "prereqs":[
+                {
+                    "class": "Computer Science I or Computer Science in the 21st Century",
+                    "grade": "85%"
+                }
+            ]
+        }
+    ],
+
+    "during": [
+        {
+            "name": "Computer Science in the 21st Century",
+            "grade": 9,
+            "weighting": "Regular",
+            "credits": 5,
+            "image_path": "",
+            "description": "Insert Description",
+            "prereqs":[
+                {
+                    "class": "Algebra I",
+                    "grade": "87%"
+                }
+            ]
+        },
+        {
+            "name": "AP Computer Science A",
+            "grade": 10,
+            "weighting": "AP",
+            "credits": 5,
+            "image_path": "",
+            "description": "Insert Description",
+            "prereqs":[
+                {
+                    "class": "Computer Science I or Computer Science in the 21st Century",
+                    "grade": "85%"
+                }
+            ]
+        }
+    ]
+
+}
