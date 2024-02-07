@@ -1,3 +1,5 @@
+import {Link} from "./link"
+
 export interface Course{
     name: string,
     grade: number,
@@ -5,7 +7,10 @@ export interface Course{
     credits: number, 
     image_path?: string,
     description: string,
-    link?: string,
+    links?: Link[],
+    teachers?: string[],
+    warnings?: string[],
+    infoLabels?: string[],
     tags?: string[],
     prereqs: PreReq[]
 }
