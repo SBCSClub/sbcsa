@@ -1,0 +1,27 @@
+[
+    {
+        "title": "ENROLLMENT",
+        "items": [
+            {"question": "How do I apply?", "answer": [
+                {"content": "You can apply by filling out the application form "}, 
+                {"content": "here", "href": "https://docs.google.com/document/d/1qrq504NNbUvJ0f42lQehynbf83H611cQjeTQmuMBv2o/edit#bookmark=id.29fj8xypyizl"},
+                {"content": ". Make sure to view the requirements before applying."}
+            ]},
+            {"question": "What are the requirements?", "answer": [
+                {"markdown": "newline", "content": "You need to have completed both Computer Science in the 21st Century and AP Computer Science A, both with an 85% or higher."},
+                {"markdown": "newline", "content": "You need to be a junior when applying."},
+                {"markdown": "newline", "content": "You need to be in good standing with the school."}
+            ]},
+            {"question": "When is the deadline?", "answer": "The deadline changes every year. For the 2024 application, the deadline is February 7th."}
+        ]
+    },
+    {
+        "title": "THE EXPERIENCE",
+        "items": [
+            {"question": "Does it appear on my transcript?", "answer": "Yes! A special distinction will be placed on the transcript for students that are enrolled and complete the Computer Science Academy at South Brunswick High School."},
+            {"question": "What is the capstone class?", "answer": "Students that are enrolled in the Computer Science Academy will take a capstone experience class their senior year.  In this class, students will learn a variety of on the job skills and tools, such as Python, Github, C++, and more. At the end of the year, they will create a final project that that they can then show off on their resume or portfolio."},
+            {"question": "How do cohorts work?", "answer": "Each cohort will be between 20 to 25 students, and will take all of their computer science classes together.  As the students progress through the program, they will stay in their cohort as a small community of learners. All of the students in the cohort are guaranteed to be in the same track."},
+            {"question":"What are some of the opportunities students will have?", "answer":"Students will be able to..."}
+        ]
+    }
+]

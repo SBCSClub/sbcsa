@@ -5,27 +5,27 @@ import CourseItem from "@/components/Courses/CourseItem";
 import styles from "./courses.module.css";
 import styled from "styled-components";
 
+const ShimmeringH1 = styled.h1`
+  background-image: linear-gradient(90deg, #8c8796 0%, white 40%, #8c8796 60%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  width: 1000px;
+  color: transparent;
+  animation: shineTitle 3s linear infinite;
+  @keyframes shineTitle {
+    0% {
+      background-position: 0px;
+    }
+    100% {
+      background-position: 1000px;
+    }
+  }
+`;
+
 export default function Courses() {
   // load in data from courses.json
   const pre: Course[] = courses["pre"];
   const during: Course[] = courses["during"];
-
-  const ShimmeringH1 = styled.h1`
-    background-image: linear-gradient(90deg, #8c8796 0%, white 40%, #8c8796 60%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    width: 1000px;
-    color: transparent;
-    animation: shineTitle 3s linear infinite;
-    @keyframes shineTitle {
-      0% {
-        background-position: 0px;
-      }
-      100% {
-        background-position: 1000px;
-      }
-    }
-  `;
 
   return (
     <>

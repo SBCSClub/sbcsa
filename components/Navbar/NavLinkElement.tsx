@@ -14,7 +14,7 @@ export default function NavLinkElement({ href, title, last = false } : NavLinkEl
     return (
         <li className="flex items-center space-x-5">
             <Link href={href} className={"hover:opacity-75 transition-opacity " + ((currentPath == href) ? "font-light" : "font-light")}>
-                {title.toLowerCase()}.csa
+                {title.toLowerCase()}
             </Link>
             { !last && 
                 <span 

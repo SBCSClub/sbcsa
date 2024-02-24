@@ -28,6 +28,8 @@ const Navbar = () => {
         <NavLinkElement href="/courses" title="courses"></NavLinkElement>
         <NavLinkElement href="/projects" title="projects"></NavLinkElement>
         <NavLinkElement href="/trips" title="trips"></NavLinkElement>
+        <NavLinkElement href="/faq" title="faq"></NavLinkElement>
+
         {/* TODO: Replace with nav button */}
         <NavLinkElement href="https://docs.google.com/document/d/1qrq504NNbUvJ0f42lQehynbf83H611cQjeTQmuMBv2o/edit#bookmark=id.29fj8xypyizl" title="apply" last></NavLinkElement>
       </ul>
