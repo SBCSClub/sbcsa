@@ -34,7 +34,7 @@ export default function FAQ() {
           }}
           className="text-9xl text-white justify-center text-center"
         >
-          FAQ
+          Frequently Asked Questions
         </ShimmeringH1>
       </div>
       <div className="flex flex-col gap-5 w-full justify-center items-center">

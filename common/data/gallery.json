@@ -1,0 +1,57 @@
+{
+    "classes": [
+        {
+            "year": 2024,
+            "posts": [ 
+                {
+                    "location": "Google NYC",
+                    "date": "12/18/2024",
+                    "images": [
+                        {
+                            "src": "/gallery/2024/1218_1.jpg"
+                        }
+                    ],
+                    "description": "🚀 First field trip of the year and what a blast it was! The CS Academy crew invaded Rutgers University New Brunswick for a mind-blowing lecture on data structures by Dr. Ana Paula Centeno. 📚💡 Post-lecture, we hit the local scene for some delicious dinner, bonding over bytes and bites! 🍽️😄"
+                },
+                {
+                    "location": "Rutgers, New Jersey",
+                    "date": "11/27/2023",
+                    "images": [
+                        {
+                            "src": "/gallery/2024/1127_2.jpg"
+                        }
+                    ],
+                    "description": "Exploring the heart of tech innovation in NYC! 🏙️✨ Our field trip to the CS Academy office was nothing short of inspiring. From an enlightening panel discussion to an eye-opening tour of their incredible workspace, we got a glimpse of the future of work. Big thanks to our SBHS alumni hosts, Driv, Taanvi, Srikar, and all the amazing individuals who made this unforgettable experience possible. 🚀💡"
+                },
+                {
+                    "location": "Princeton, Research Computing",
+                    "date": "01/19/2023",
+                    "images": [
+                        {
+                            "src": "/gallery/2024/0119_3.jpg"
+                        }
+                    ],
+                    "description": "We had our first field trip for 2023!! We went to the Princeton High-Performance Computing Data Center.\nWe got to go on a tour of the data center. Matthew Petty, a Data Center Facilities Manager at Princeton University showed us all the high-performance machines. We learned about all the different types of machinery it takes to make up the data center. It was very impressive how they are able to keep all their equipment running efficiently.\nThere was also a presentation given by Ian Cosden who is the Director of Research Software Engineering for Computational & Data Science, and Sushma Mendu, the Director of Software and Application Services at Princeton University.  They both spoke to us as well, about the different uses for the high performance center as well as opportunities they have there.  They let us know about the skill sets needed to succeed in the future.\nThe whole trip was really enjoyable and everyone had a great time. We can't thank the people at the Princeton HPC Data Center enough for it."
+                },
+                {
+                    "location": "Greenbrook Elementary",
+                    "date": "02/28/2024",
+                    "images": [
+                        {
+                            "src": "/gallery/2024/0228_4.jpg"
+                        }
+                    ],
+                    "description": "We had an amazing time visiting Monmouth Junction Elementary and Greenbrook Elementary! Our CS Academy students led the way, teaching beginner coding on code.org to the enthusiastic 5th graders. The energy was electric, and we were blown away by the bright minds of these young learners. Here’s to inspiring the next generation of coders!"
+                }
+            ]
+        },
+        {
+            "year": 2025,
+            "posts": []
+        },
+        {
+            "year": 2026,
+            "posts": []
+        }
+    ]
+}

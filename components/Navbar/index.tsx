@@ -12,7 +12,7 @@ const Navbar = () => {
           // WebkitBackdropFilter: "blur(10px)"
         }
       }
-      className="py-3 bg-black px-3 md:px-9 fixed top-0 left-0 right-0 flex justify-center items-center z-50"
+      className="py-3 px-3 md:px-9 fixed top-0 left-0 right-0 flex justify-center items-center z-50"
     >
       {/* <Link href={"/"}>
                 <Image
@@ -27,7 +27,7 @@ const Navbar = () => {
         <NavLinkElement href="/" title="Home"></NavLinkElement>
         <NavLinkElement href="/courses" title="courses"></NavLinkElement>
         <NavLinkElement href="/projects" title="projects"></NavLinkElement>
-        <NavLinkElement href="/trips" title="trips"></NavLinkElement>
+        <NavLinkElement href="/gallery" title="gallery"></NavLinkElement>
         <NavLinkElement href="/faq" title="faq"></NavLinkElement>
 
         {/* TODO: Replace with nav button */}

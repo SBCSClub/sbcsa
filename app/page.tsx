@@ -1,7 +1,8 @@
 "use client";
 
-import Image from 'next/image'
 import Animate from '@/components/Animate';
+import Image from 'next/image'
+
 import styled from 'styled-components';
 
 // import { useEffect } from 'react';
@@ -42,7 +43,7 @@ export default function Home() {
           />
         </Animate.Element>
         <Animate.Element
-          className='z-50' 
+          className='z-30' 
           onActivatedClasses='scale-1 duration-500 delay-500'
           onDeactivatedClasses='scale-[0.5]'
         >
