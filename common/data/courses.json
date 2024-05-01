@@ -5,7 +5,7 @@
             "grade": 9,
             "weighting": "Regular",
             "credits": 5,
-            "image_path": "/courses/cs21.jpg",
+            "image_path": "/courses/java.png",
             "description": "Students will learn to apply 21st Century Skills by programming personal computers using Java. Topics include mathematical notation, read, write, and decision statements, loops, nested loops, generation of random numbers, procedures, and arrays. The emphasis will be on developing good programming style and technique.",
             "tags": ["Intro", "Java", "If Statements", "Loops", "Arrays", "Programming Technique"],
             "infoLabels": ["This course can be substituted with Introduction to Computer Science"],
