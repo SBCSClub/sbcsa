@@ -22,11 +22,11 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
 
 type PropType = {
   slides: IPost[]
-  options?: EmblaOptionsType
+  options?: EmblaOptionsType,
+  onSlideClick: (id: number) => void
 }
 
-const GalleryCarousel: React.FC<PropType> = (props) => {
-  const { slides, options } = props
+const GalleryCarousel: React.FC<PropType> = ({ slides, options, onSlideClick }) => {
   const [emblaRef, emblaApi] = useEmblaCarousel(options)
   const tweenFactor = useRef(0)
   const tweenNodes = useRef<HTMLElement[]>([])
@@ -116,6 +116,7 @@ const GalleryCarousel: React.FC<PropType> = (props) => {
                 <GalleryPost 
                   key={index}
                   post={slide}
+                  onClick={() => onSlideClick(slide.id)}
                 />           
               </div>
             </div>

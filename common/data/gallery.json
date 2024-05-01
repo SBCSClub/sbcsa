@@ -1,9 +1,37 @@
 {
     "classes": [
         {
+            "year": 2025,
+            "posts": [
+                {
+                    "id": 1,
+                    "location": "SBHS DLC",
+                    "date": "01/17/2024",
+                    "images": [
+                        {
+                            "src": "/gallery/2025/0117_1.jpg"
+                        }
+                    ],
+                    "description": "CS Academy Class of 2025 got an exclusive dose of wisdom from our stellar SBHS alumni panel featuring Hitesh Ale, Kevin Chen, Neha Gogate, Pooja Raghuram, Shreya Venkateswaran, Sridula Kunamneni, Swathi Pulipati, Vrushti Patel, Yash Nishikant, and Zareeb Chowdhury! 🚀💻 From sharing insights on college life to diving into their courses and internships, their journey continues to inspire the next generation of tech enthusiasts."
+                }
+            ]
+        },
+        {
             "year": 2024,
             "posts": [ 
                 {
+                    "id": "5",
+                    "location": "SBHS DLC",
+                    "date": "12/01/2023",
+                    "images": [
+                        {
+                            "src": "/gallery/2024/1201_5.jpg"
+                        }
+                    ],
+                    "description": "Exciting day at CSAcademy! Shoutout to Vinita, and our SBHS alumni, Kevin and Mikel, for coming in and talking with the academy. Sharing their experiences from college to the working world, they've given us invaluable insights and a burst of inspiration."
+                },
+                {
+                    "id": 1,
                     "location": "Google NYC",
                     "date": "12/18/2024",
                     "images": [
@@ -14,6 +42,7 @@
                     "description": "🚀 First field trip of the year and what a blast it was! The CS Academy crew invaded Rutgers University New Brunswick for a mind-blowing lecture on data structures by Dr. Ana Paula Centeno. 📚💡 Post-lecture, we hit the local scene for some delicious dinner, bonding over bytes and bites! 🍽️😄"
                 },
                 {
+                    "id": 2,
                     "location": "Rutgers, New Jersey",
                     "date": "11/27/2023",
                     "images": [
@@ -24,6 +53,7 @@
                     "description": "Exploring the heart of tech innovation in NYC! 🏙️✨ Our field trip to the CS Academy office was nothing short of inspiring. From an enlightening panel discussion to an eye-opening tour of their incredible workspace, we got a glimpse of the future of work. Big thanks to our SBHS alumni hosts, Driv, Taanvi, Srikar, and all the amazing individuals who made this unforgettable experience possible. 🚀💡"
                 },
                 {
+                    "id": 3,
                     "location": "Princeton, Research Computing",
                     "date": "01/19/2023",
                     "images": [
@@ -34,6 +64,7 @@
                     "description": "We had our first field trip for 2023!! We went to the Princeton High-Performance Computing Data Center.\nWe got to go on a tour of the data center. Matthew Petty, a Data Center Facilities Manager at Princeton University showed us all the high-performance machines. We learned about all the different types of machinery it takes to make up the data center. It was very impressive how they are able to keep all their equipment running efficiently.\nThere was also a presentation given by Ian Cosden who is the Director of Research Software Engineering for Computational & Data Science, and Sushma Mendu, the Director of Software and Application Services at Princeton University.  They both spoke to us as well, about the different uses for the high performance center as well as opportunities they have there.  They let us know about the skill sets needed to succeed in the future.\nThe whole trip was really enjoyable and everyone had a great time. We can't thank the people at the Princeton HPC Data Center enough for it."
                 },
                 {
+                    "id": 4,
                     "location": "Greenbrook Elementary",
                     "date": "02/28/2024",
                     "images": [
@@ -44,10 +75,6 @@
                     "description": "We had an amazing time visiting Monmouth Junction Elementary and Greenbrook Elementary! Our CS Academy students led the way, teaching beginner coding on code.org to the enthusiastic 5th graders. The energy was electric, and we were blown away by the bright minds of these young learners. Here’s to inspiring the next generation of coders!"
                 }
             ]
-        },
-        {
-            "year": 2025,
-            "posts": []
         },
         {
             "year": 2026,

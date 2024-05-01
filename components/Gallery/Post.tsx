@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 export interface IPost {
+    id: number;
     location?: string; 
     date?: string;
     images: {
@@ -12,11 +13,14 @@ export interface IPost {
 
 interface IGalleryPostProps {
     post: IPost; 
+    onClick: () => void;
 }
 
-const GalleryPost : React.FC<IGalleryPostProps> = ({ post }) => {
+const GalleryPost : React.FC<IGalleryPostProps> = ({ post, onClick }) => {
     return (
-        <article className="border-solid border-[rgba(255,255,255,0.15)] border-[1px] w-[400px] rounded-3xl flex flex-col">
+        <article
+            onClick={onClick}
+            className="border-solid border-[rgba(255,255,255,0.15)] border-[1px] w-[400px] rounded-3xl flex flex-col">
             <header className="w-full border-solid border-[rgba(255,255,255,0.15)] border-b-[1px] h-[75px] px-4 py-2 rounded-t-xl">
                 <div className="flex gap-4">
                     <div className="bg-white w-[50px] h-[50px] relative rounded-full">
