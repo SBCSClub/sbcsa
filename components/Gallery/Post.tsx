@@ -48,12 +48,16 @@ const GalleryPost : React.FC<IGalleryPostProps> = ({ post, onClick }) => {
                 </p>
             </header>
             <div className="relative w-[400px] h-[400px]">
-                <Image
-                    src={post.images[0].src}
-                    alt="placeholder"
-                    layout="fill"
-                    objectFit="cover"
-                />
+               {
+                post.images.length > 0 && (
+                    <Image
+                        src={post.images[0].src}
+                        alt="placeholder"
+                        layout="fill"
+                        objectFit="cover"
+                    />
+                )
+               }
             </div>
             <footer className="h-[100px] p-4">
                 <p className="text-white h-[75px] overflow-scroll">

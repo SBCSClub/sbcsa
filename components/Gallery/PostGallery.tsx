@@ -50,16 +50,16 @@ const PostGallery : React.FC<IPostGalleryProps> = ({ slides }) => {
                 className="absolute bottom-0 left-1/2 -translate-x-1/2"
             >
                 {
-                    scrollSnaps.map((index) => (
-                        <DotButton 
+                    scrollSnaps.map((_, i) => {
+                        return <DotButton 
                             className={clsx(
                                 "w-2 h-2 rounded-full bg-white mx-1 hover:opacity-70 transition-opacity",
-                                index === selectedIndex && "opacity-70"
+                                i === selectedIndex && "opacity-70"
                             )}
-                            onClick={() => onDotButtonClick(index)}
-                            key={index} 
+                            onClick={() => onDotButtonClick(i)}
+                            key={i} 
                         />
-                    ))
+                    })
                 }
             </div>
             <button 
