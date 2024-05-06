@@ -6,6 +6,7 @@ import Modal from "../Modal";
 import { IPost } from "./Post";
 import GalleryCarousel from "./carousel";
 import Image from "next/image";
+import PostGallery from "./PostGallery";
 
 const OPTIONS: EmblaOptionsType = { loop: true }
 
@@ -27,17 +28,13 @@ const GalleryContainer : React.FC<IGalleryContainerProps> = ({ slides }) => {
                 fullWidth={true}
                 setOpen={(_e) => setExpandedSlideMeta({ ...expandedSlideMeta, show: false }) } 
             >
-                <div className="relative bg-black w-full h-[450px] flex justify-center gap-5">
-                    <div className="relative h-full w-full flex-1">
-                        <Image
-                            src={selectedSlide?.images[0].src || ""}
-                            alt={selectedSlide?.location || ""}
-                            layout="fill"
-                            className="object-top"
-                            objectFit="contain"
+                <div className="relative bg-black w-full h-[calc(100vh-100px)] md:h-[450px] flex justify-center gap-5 md:flex-row flex-col">
+                    <div className="relative h-full md:flex-1">
+                        <PostGallery
+                            slides={selectedSlide?.images || []}
                         />
                     </div>
-                    <article className="flex-1">
+                    <article className="md:flex-1">
                         <h1 className="font-semibold">{selectedSlide?.location}</h1>
                         <h2 className="text-[rgba(255,255,255,0.75)]">{selectedSlide?.date}</h2>
                         <p className="mt-3">
