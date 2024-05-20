@@ -9,6 +9,7 @@ const ShimmeringH1 = styled.h1`
   -webkit-background-clip: text;
   background-clip: text;
   width: 1000px;
+  font-size: 9rem;
   color: transparent;
   animation: shineTitle 3s linear infinite;
   @keyframes shineTitle {
@@ -18,6 +19,10 @@ const ShimmeringH1 = styled.h1`
     100% {
       background-position: 1000px;
     }
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
   }
 `;
 
@@ -39,7 +44,7 @@ export default function FAQ() {
       </div>
       <div className="flex flex-col gap-5 w-full justify-center items-center">
         {data.map((section, index) => (
-          <div key={index} className="w-2/3 flex flex-col gap-3">
+          <div key={index} className="w-full p-10 md:w-2/3 flex flex-col gap-3">
             <h2 className="text-gray-400 text-medium text-xl">{section.title}</h2>
             <div className="flex gap-3 flex-col justify-center items-center">
               {section.items.map((item, index) => (

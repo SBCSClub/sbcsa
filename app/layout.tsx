@@ -23,7 +23,7 @@ export default function RootLayout({
       <body id="root" className={clsx(inter.className, "flex items-center flex-col")}>
         <Navbar />
         {children}
-        {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )

@@ -8,7 +8,7 @@ const Gallery = () => {
     const futureClasses = classes.filter((c) => c.posts.length === 0);
 
     return (
-        <div className="h-screen w-screen relative">
+        <div className="min-h-screen w-screen relative pb-10">
             <GalleryStrip className="mt-4 absolute top-12" />
             <div className="mt-40 px-12 flex gap-12 flex-wrap">
                 {

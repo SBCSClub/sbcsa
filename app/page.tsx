@@ -1,7 +1,7 @@
 "use client";
 
 import Animate from '@/components/Animate';
-import Image from 'next/image'
+import Image from 'next/image';
 
 import styled from 'styled-components';
 
@@ -12,7 +12,7 @@ const ShimmeringH1 = styled.h1`
 background-image: linear-gradient(90deg, #8C8796 0%, white 40%, #8C8796 60%);
   -webkit-background-clip: text;
   background-clip: text;
-  width: 1000px;
+  max-width: 1000px;
   color: transparent;
   animation: shineTitle 3s linear infinite;
   @keyframes shineTitle {
