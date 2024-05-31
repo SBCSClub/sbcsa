@@ -20,6 +20,16 @@ const ShimmeringH1 = styled.h1`
       background-position: 1000px;
     }
   }
+  @media (max-width: 1000px) {
+    font-size: 7rem;
+    width: 700px;
+    letter-spacing: -8px;
+  }
+  @media (max-width: 700px) {
+    font-size: 5rem;
+    letter-spacing: -6px !important;
+    width: 400px;
+  }
 `;
 
 export default function Courses() {
@@ -41,7 +51,7 @@ export default function Courses() {
         </ShimmeringH1>
       </div>
 
-      <div className={`${styles.courses} flex flex-col w-full gap-16 mt-10 mb-20`} id="courses">
+      <div className={`${styles.courses} flex flex-col w-full gap-16 md:mt-10 mt-3 mb-20`} id="courses">
         {pre.map((item, index) => (
           <CourseItem key={index} courseInfo={item} />
         ))}

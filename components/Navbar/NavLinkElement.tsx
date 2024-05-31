@@ -3,17 +3,17 @@ import Link from 'next/link'
 import React from 'react'
 import { usePathname } from 'next/navigation';
 
-interface NavLinkElementProps{
+interface NavLinkElementProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
     title: string; 
     href: string;
     last?: boolean;
 }
 
-export default function NavLinkElement({ href, title, last = false } : NavLinkElementProps){
+export default function NavLinkElement({ href, title, last = false, ...props } : NavLinkElementProps){
     const currentPath = usePathname();
     return (
         <li className="flex items-center space-x-5">
-            <Link href={href} className={"hover:opacity-75 transition-opacity " + ((currentPath == href) ? "font-light" : "font-light")}>
+            <Link { ...props } href={href} className={"hover:opacity-75 transition-opacity " + ((currentPath == href) ? "font-light" : "font-light")}>
                 {title.toLowerCase()}
             </Link>
             { !last && 

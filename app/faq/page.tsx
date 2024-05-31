@@ -11,6 +11,7 @@ const ShimmeringH1 = styled.h1`
   width: 1000px;
   font-size: 9rem;
   color: transparent;
+  letter-spacing: -12px;
   animation: shineTitle 3s linear infinite;
   @keyframes shineTitle {
     0% {
@@ -21,8 +22,15 @@ const ShimmeringH1 = styled.h1`
     }
   }
 
-  @media (max-width: 768px) {
-    width: 100%;
+  @media (max-width: 1000px) {
+    font-size: 7rem;
+    width: 700px;
+    letter-spacing: -8px;
+  }
+  @media (max-width: 700px) {
+    font-size: 5rem;
+    letter-spacing: -6px;
+    width: 400px;
   }
 `;
 
@@ -35,7 +43,6 @@ export default function FAQ() {
         <ShimmeringH1
           style={{
             lineHeight: "1.3",
-            letterSpacing: "-12px",
           }}
           className="text-9xl text-white justify-center text-center"
         >
