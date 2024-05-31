@@ -26,8 +26,8 @@ const Navbar = () => {
       <ul className="flex space-x-5">
         <NavLinkElement href="/" title="Home"></NavLinkElement>
         <NavLinkElement href="/courses" title="courses"></NavLinkElement>
-        <NavLinkElement href="/projects" title="projects"></NavLinkElement>
-        {/* <NavLinkElement href="/gallery" title="gallery"></NavLinkElement> */}
+        {/* <NavLinkElement href="/projects" title="projects"></NavLinkElement> */}
+        <NavLinkElement href="/gallery" title="gallery"></NavLinkElement>
         <NavLinkElement href="/faq" title="faq"></NavLinkElement>
 
         {/* TODO: Replace with nav button */}
